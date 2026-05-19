@@ -1,0 +1,18 @@
+{
+  "company": "Kaelio",
+  "repo": "groundtruth-eval",
+  "metrics": [
+    "semantic_coverage",
+    "layer_risk",
+    "agents_precision",
+    "product_latency"
+  ],
+  "failure_modes": [
+    "semantic_drift",
+    "layer_gap",
+    "agents_misroute",
+    "product_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
