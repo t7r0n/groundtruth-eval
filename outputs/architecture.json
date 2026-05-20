@@ -1,0 +1,59 @@
+{
+  "layers": [
+    {
+      "name": "synthetic_fixture_replay",
+      "purpose": "exercise semantic and layer cases"
+    },
+    {
+      "name": "domain_strategy",
+      "purpose": "score semantic_coverage and layer_risk"
+    },
+    {
+      "name": "evidence_lock",
+      "purpose": "reject narrative claims without fixture evidence IDs"
+    },
+    {
+      "name": "operator_packet",
+      "purpose": "emit dashboard, SVG readout, CSV, markdown report, and demo pack"
+    }
+  ],
+  "pressure_index": 0.3167,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "semantic evidence replay",
+      "metric": "semantic_coverage",
+      "failure_mode": "semantic_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "product operator packet",
+      "metric": "layer_risk",
+      "failure_mode": "layer_gap",
+      "evidence": "ev_0143",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "agents regression harness",
+      "metric": "agents_precision",
+      "failure_mode": "agents_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "layer boundary probe",
+      "metric": "product_latency",
+      "failure_mode": "product_blindspot",
+      "evidence": "ev_0121",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ]
+}

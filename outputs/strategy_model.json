@@ -1,0 +1,69 @@
+{
+  "company": "Kaelio",
+  "repo": "groundtruth-eval",
+  "terms": [
+    "semantic",
+    "layer",
+    "agents",
+    "product",
+    "question",
+    "agent",
+    "answers",
+    "correct"
+  ],
+  "metrics": [
+    "semantic_coverage",
+    "layer_risk",
+    "agents_precision",
+    "product_latency"
+  ],
+  "failure_modes": [
+    "semantic_drift",
+    "layer_gap",
+    "agents_misroute",
+    "product_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "semantic evidence replay",
+      "metric": "semantic_coverage",
+      "failure_mode": "semantic_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "product operator packet",
+      "metric": "layer_risk",
+      "failure_mode": "layer_gap",
+      "evidence": "ev_0143",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "agents regression harness",
+      "metric": "agents_precision",
+      "failure_mode": "agents_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "layer boundary probe",
+      "metric": "product_latency",
+      "failure_mode": "product_blindspot",
+      "evidence": "ev_0121",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Kaelio gets a local, deterministic pressure test around semantic, layer, and agents. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
