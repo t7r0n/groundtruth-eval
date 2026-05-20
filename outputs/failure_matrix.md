@@ -2,10 +2,10 @@
 
 | Scenario | Failure mode | Metric | Gate | Evidence |
 | --- | --- | --- | --- | --- |
-| semantic evidence replay | semantic_drift | semantic_coverage | block release until cited evidence is regenerated | ev_0000 |
-| product operator packet | product_blindspot | product_latency | accept only if decision claims cite fixture evidence | ev_0007 |
-| product operator packet | product_blindspot | product_latency | accept only if decision claims cite fixture evidence | ev_0011 |
-| agents regression harness | agents_misroute | agents_precision | open a regression issue with trace and benchmark delta | ev_0014 |
-| layer boundary probe | layer_gap | layer_risk | route to reviewer with evidence packet | ev_0021 |
-| agents regression harness | agents_misroute | agents_precision | open a regression issue with trace and benchmark delta | ev_0022 |
-| semantic evidence replay | semantic_drift | semantic_coverage | block release until cited evidence is regenerated | ev_0028 |
+| evidence replay | evidence_drift | evidence_coverage | block release until cited evidence is regenerated | ev_0000 |
+| review operator packet | review_blindspot | review_latency | accept only if decision claims cite fixture evidence | ev_0007 |
+| review operator packet | review_blindspot | review_latency | accept only if decision claims cite fixture evidence | ev_0011 |
+| claim regression harness | claim_misroute | claim_precision | open a regression issue with trace and benchmark delta | ev_0014 |
+| handoff boundary probe | handoff_gap | handoff_risk | route to reviewer with evidence packet | ev_0021 |
+| claim regression harness | claim_misroute | claim_precision | open a regression issue with trace and benchmark delta | ev_0022 |
+| evidence replay | evidence_drift | evidence_coverage | block release until cited evidence is regenerated | ev_0028 |

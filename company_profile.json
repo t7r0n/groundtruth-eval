@@ -1,77 +1,61 @@
 {
-  "company": "Kaelio",
-  "company_slug": "kaelio",
+  "company": "Groundtruth Eval",
+  "company_slug": "groundtruth-eval",
   "repo": "groundtruth-eval",
   "package": "groundtruth_eval",
   "cli": "groundtruth-eval",
   "title": "Groundtruth Eval",
-  "problem": "A semantic layer for agents product has one bet the company question: when the agent answers, was the answer correct against the governed definition? Kaelio's marketing copy says \"metrics defined in five places, governed in none\" (kaelio.com) \u2014 but the only artifact a buyer sees today is a homepage and a list of integrations.",
-  "direction": "An open benchmark + harness that scores any context layer grounded analytics agent on natural language -> governed metric correctness, designed to make Kaelio the reference standard.",
-  "why": "I deliberately didn't pitch \"build a new BI integration\" (they have 900+) or \"an analytics agent\" (they have one) - instead I pitched the meta product that decides who wins the category. That's the judgment call.",
+  "problem": "A semantic layer for agents product has one bet the company question: when the agent answers, was the answer correct against the governed definition? Groundtruth Eval's marketing copy says \"metrics defined in five places, governed in none\" (Groundtruth ) - but the only artifact a buyer sees today is a homepage and a list of integrations.",
+  "direction": "An open benchmark + harness that scores any context layer grounded analytics agent on natural language -> governed metric correctness, designed to make Groundtruth Eval the reference standard.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "semantic",
-    "layer",
-    "agents",
-    "product",
-    "question",
-    "agent",
-    "answers",
-    "correct",
-    "governed",
-    "definition",
-    "kaelio",
-    "marketing",
-    "metrics",
-    "defined",
-    "places",
-    "artifact",
-    "buyer",
-    "today"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "semantic_coverage",
-    "layer_risk",
-    "agents_precision",
-    "product_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "semantic_drift",
-    "layer_gap",
-    "agents_misroute",
-    "product_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "semantic evidence replay",
-      "trigger": "semantic signal changes while layer context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "layer boundary probe",
-      "trigger": "layer handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "agents regression harness",
-      "trigger": "agents behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "product operator packet",
-      "trigger": "product output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.kaelio.com/blog/best-ai-analytics-tools-for-healthcare-organizations",
-    "https://www.kaelio.com/blog/best-semantic-layer-solutions-for-data-teams-2026-guide",
-    "https://www.kaelio.com/blog/best-ai-analytics-tools-that-work-with-dbt-and-lookml",
-    "https://www.ycombinator.com/companies/kaelio",
-    "https://x.com/ycombinator/status/1924465068487667748",
-    "https://www.linkedin.com/in/luca-martial/",
-    "https://github.com/luca-martial",
-    "https://github.com/JohnSnowLabs/spark-nlp",
-    "https://github.com/Giskard-AI/giskard"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/groundtruth-eval"
 }

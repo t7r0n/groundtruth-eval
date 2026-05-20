@@ -1,13 +1,13 @@
-# Operator Brief: Kaelio
+# Operator Brief: Groundtruth Eval
 
-Kaelio gets a local, deterministic pressure test around semantic, layer, and agents. The useful part is the repeatable evidence path from fixture to failure to operator action.
+This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
-- semantic evidence replay -> block release until cited evidence is regenerated (semantic_coverage, evidence ev_0088).
-- product operator packet -> accept only if decision claims cite fixture evidence (layer_risk, evidence ev_0143).
-- agents regression harness -> open a regression issue with trace and benchmark delta (agents_precision, evidence ev_0110).
-- layer boundary probe -> route to reviewer with evidence packet (product_latency, evidence ev_0121).
+- evidence replay -> block release until cited evidence is regenerated (evidence_coverage, evidence ev_0132).
+- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0143).
+- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0066).
+- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0077).
 
 ## What makes this useful
 
