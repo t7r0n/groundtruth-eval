@@ -1,6 +1,6 @@
 # Operator Brief: Kaelio
 
-Kaelio gets a local, deterministic pressure test around semantic, layer, and agents. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action.
+Kaelio gets a local, deterministic pressure test around semantic, layer, and agents. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
