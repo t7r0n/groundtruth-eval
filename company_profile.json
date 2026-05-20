@@ -16,7 +16,6 @@
     "question",
     "agent",
     "answers",
-    "answer",
     "correct",
     "governed",
     "definition",
@@ -26,7 +25,8 @@
     "defined",
     "places",
     "artifact",
-    "buyer"
+    "buyer",
+    "today"
   ],
   "metrics": [
     "semantic_coverage",
@@ -39,6 +39,28 @@
     "layer_gap",
     "agents_misroute",
     "product_blindspot"
+  ],
+  "archetypes": [
+    {
+      "name": "semantic evidence replay",
+      "trigger": "semantic signal changes while layer context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "layer boundary probe",
+      "trigger": "layer handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "agents regression harness",
+      "trigger": "agents behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "product operator packet",
+      "trigger": "product output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
   ],
   "sources": [
     "https://www.kaelio.com/blog/best-ai-analytics-tools-for-healthcare-organizations",

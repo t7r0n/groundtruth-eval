@@ -1,0 +1,67 @@
+{
+  "repo": "groundtruth-eval",
+  "company": "Kaelio",
+  "rubric_axes": [
+    {
+      "axis": "semantic_coverage",
+      "failures": [
+        "semantic_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "layer_risk",
+      "failures": [
+        "layer_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "agents_precision",
+      "failures": [
+        "agents_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "product_latency",
+      "failures": [
+        "product_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "semantic evidence replay",
+      "trigger": "semantic signal changes while layer context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "layer boundary probe",
+      "trigger": "layer handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "agents regression harness",
+      "trigger": "agents behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "product operator packet",
+      "trigger": "product output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.kaelio.com/blog/best-ai-analytics-tools-for-healthcare-organizations",
+    "https://www.kaelio.com/blog/best-semantic-layer-solutions-for-data-teams-2026-guide",
+    "https://www.kaelio.com/blog/best-ai-analytics-tools-that-work-with-dbt-and-lookml",
+    "https://www.ycombinator.com/companies/kaelio",
+    "https://x.com/ycombinator/status/1924465068487667748",
+    "https://www.linkedin.com/in/luca-martial/",
+    "https://github.com/luca-martial",
+    "https://github.com/JohnSnowLabs/spark-nlp",
+    "https://github.com/Giskard-AI/giskard"
+  ]
+}
