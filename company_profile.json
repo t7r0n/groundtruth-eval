@@ -5,7 +5,7 @@
   "package": "groundtruth_eval",
   "cli": "groundtruth-eval",
   "title": "Groundtruth Eval",
-  "problem": "A semantic layer for agents product has one bet the company question: when the agent answers, was the answer correct against the governed definition? Kaelio's marketing copy says \"metrics defined in five places, governed in none\" (kaelio.com) - but the only artifact a buyer sees today is a homepage and a list of integrations.",
+  "problem": "A semantic layer for agents product has one bet the company question: when the agent answers, was the answer correct against the governed definition? Kaelio's marketing copy says \"metrics defined in five places, governed in none\" (kaelio.com) \u2014 but the only artifact a buyer sees today is a homepage and a list of integrations.",
   "direction": "An open benchmark + harness that scores any context layer grounded analytics agent on natural language -> governed metric correctness, designed to make Kaelio the reference standard.",
   "why": "I deliberately didn't pitch \"build a new BI integration\" (they have 900+) or \"an analytics agent\" (they have one) - instead I pitched the meta product that decides who wins the category. That's the judgment call.",
   "terms": [
